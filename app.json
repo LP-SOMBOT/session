@@ -1,0 +1,23 @@
+
+{
+    "name": "SOMBOT-MD",
+    "description": "Session Generator for SOMBOT-MD",
+    "logo": "https://files.catbox.moe/ovx54i.jpg",
+    "repository": "https://github.com/LP-SOMBOT/session",
+    "keywords": ["SOMBOT-MD"],
+    "success_url": "/", 
+    "buildpacks": [{ "url": "https://github.com/heroku/heroku-buildpack-nodejs#latest" } ],
+    "env": {      
+      "PORT": {
+        "description": "Port for web app.4000,5000,3000... any!",
+        "value": "5000",
+        "required": false 
+      },
+      "MESSAGE": {
+        "description": "Just Leave This Blank",
+        "value": "",
+        "required": false 
+      }
+    }   
+
+}
